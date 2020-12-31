@@ -2,10 +2,19 @@
   "name": "dapp-vue-starter",
   "version": "0.1.0",
   "private": true,
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "migrate:reset": "truffle migrate --reset",
+    "test": "truffle test",
+    "console": "truffle console",
+    "solhint": "solhint \"contracts/**/*.sol\""
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -34,6 +43,8 @@
     "prettier": "^2.2.1",
     "sass": "^1.26.11",
     "sass-loader": "^10.0.2",
+    "solhint": "^3.3.2",
+    "truffle": "^5.1.59",
     "vue-cli-plugin-bootstrap-vue": "~0.7.0",
     "vue-template-compiler": "^2.6.11"
   },
