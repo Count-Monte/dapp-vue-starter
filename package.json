@@ -14,7 +14,8 @@
     "migrate:reset": "truffle migrate --reset",
     "test": "truffle test",
     "console": "truffle console",
-    "solhint": "solhint \"contracts/**/*.sol\""
+    "solhint": "solhint \"contracts/**/*.sol\"",
+    "prettier:solidity": "prettier --write contracts/**/*.sol"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -43,6 +44,7 @@
     "popper.js": "^1.16.1",
     "portal-vue": "^2.1.7",
     "prettier": "^2.2.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.2",
     "sass": "^1.26.11",
     "sass-loader": "^10.0.2",
     "solhint": "^3.3.2",
