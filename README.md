@@ -58,7 +58,19 @@ npm run lint
 
 ## Docker
 
-Build production ready docker image
+### Run ganache-cli in docker - simplest version
+
+```
+docker run --detach --publish 8545:8545 trufflesuite/ganache-cli:latest
+```
+
+### Run ganache-cli in docker with additional parameters
+
+```
+docker run --detach --publish 8545:8545 trufflesuite/ganache-cli:latest --verbose --blockTime=5 --accounts=20
+```
+
+### Build production ready docker image
 
 ```
 docker build --tag dapp-vue-starter .
