@@ -16,6 +16,7 @@ npm run compile
 
 ```
 npm run migrate
+npm run migrate --network mycustomnetwork
 npm run migrate:reset
 ```
 
@@ -53,6 +54,14 @@ npm run build
 
 ```
 npm run lint
+```
+
+## Docker
+
+Build production ready docker image
+
+```
+docker build --tag dapp-vue-starter .
 ```
 
 ### Customize configuration
