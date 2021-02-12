@@ -39,6 +39,7 @@
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-prettier": "^3.3.0",
     "eslint-plugin-vue": "^6.2.2",
+    "ganache-cli": "^6.12.2",
     "mocha": "^8.2.1",
     "mutationobserver-shim": "^0.3.7",
     "popper.js": "^1.16.1",
