@@ -6,13 +6,13 @@
 npm install
 ```
 
-### Compile contracts
+### Compiles contracts
 
 ```
 npm run compile
 ```
 
-### Migrate contracts
+### Migrates contracts
 
 ```
 npm run migrate
@@ -20,22 +20,28 @@ npm run migrate --network mycustomnetwork
 npm run migrate:reset
 ```
 
-### Run truffle tests
+### Runs truffle tests
 
 ```
 npm run test
 ```
 
-### Run truffle console
+### Runs truffle console
 
 ```
 npm run console
 ```
 
-### Run Solidity linter (solhint)
+### Runs Solidity linter (solhint)
 
 ```
 npm run solhint
+```
+
+### Runs prettier on Solidity contracts
+
+```
+npm run prettier:solidity
 ```
 
 ### Compiles and hot-reloads for development
@@ -58,19 +64,31 @@ npm run lint
 
 ## Docker
 
-### Run ganache-cli in docker - simplest version
+### Runs ganache-cli in docker - simplest version
 
 ```
 docker run --detach --publish 8545:8545 trufflesuite/ganache-cli:latest
 ```
 
-### Run ganache-cli in docker with additional parameters
+### Runs ganache-cli in docker with forked mainnet
+
+```
+ganache-cli -f https://cloudflare-eth.com
+```
+
+### Runs ganache-cli in docker with forked mainnet and unlocked account
+
+```
+ganache-cli -f https://cloudflare-eth.com -u "0x41653c7d61609D856f29355E404F310Ec4142Cfb"
+```
+
+### Runs ganache-cli in docker with additional parameters
 
 ```
 docker run --detach --publish 8545:8545 trufflesuite/ganache-cli:latest --verbose --blockTime=5 --accounts=20
 ```
 
-### Build production ready docker image
+### Builds production-ready Docker image (Nginx as a web server)
 
 ```
 docker build --tag dapp-vue-starter .
