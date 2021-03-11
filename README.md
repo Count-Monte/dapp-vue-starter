@@ -62,24 +62,26 @@ npm run build
 npm run lint
 ```
 
+## Ganache
+
+### Runs ganache-cli with forked mainnet
+
+```
+ganache-cli -f https://cloudflare-eth.com
+```
+
+### Runs ganache-cli with forked mainnet and unlocked account
+
+```
+ganache-cli -f https://cloudflare-eth.com -u "0x41653c7d61609D856f29355E404F310Ec4142Cfb"
+```
+
 ## Docker
 
 ### Runs ganache-cli in docker - simplest version
 
 ```
 docker run --detach --publish 8545:8545 trufflesuite/ganache-cli:latest
-```
-
-### Runs ganache-cli in docker with forked mainnet
-
-```
-ganache-cli -f https://cloudflare-eth.com
-```
-
-### Runs ganache-cli in docker with forked mainnet and unlocked account
-
-```
-ganache-cli -f https://cloudflare-eth.com -u "0x41653c7d61609D856f29355E404F310Ec4142Cfb"
 ```
 
 ### Runs ganache-cli in docker with additional parameters
