@@ -50,6 +50,7 @@
     "sass-loader": "^10.0.2",
     "solhint": "^3.3.2",
     "truffle": "^5.1.59",
+    "truffle-security": "^1.7.3",
     "vue-cli-plugin-bootstrap-vue": "~0.7.0",
     "vue-template-compiler": "^2.6.11"
   },
